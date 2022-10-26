@@ -1,5 +1,13 @@
+/* On déclare nos variables au plus haut niveau, dans :root, en commençant par "--" */
+:root {
+  --font-family: TripSans-Regular;
+}
+
+body {
+  font-family: --font-family;
+}
+
 h1 {
-  font-family: "Roboto", sans-serif;
   font-size: 54px;
   font-weight: bold;
   margin-top: 25px;
@@ -33,7 +41,7 @@ header {
 }
 
 .main {
-  margin-top: 80px;
+  margin-top: 80px; /*pour passer sous le header*/
 }
 
 .div-logo-and-search {
@@ -96,12 +104,12 @@ header {
 
 /*PARTIE TITRE*/
 .explore {
-  color: red;
+  color: #ff5d5d;
   margin-bottom: 40px;
 }
 
 .revenus {
-  font: 15px;
+  font-size: 15px;
   color: #333333;
   margin-top: 20px;
 }
@@ -161,12 +169,22 @@ header {
   background-position: center;
 }
 
+.legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #333333;
+  margin-top: 20px;
+}
+
 /*PARTIE LUMIERE*/
 .lumiere {
+  width: 50%;
   font-size: 20px;
   margin-top: 20px;
-  width: 45%;
-  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  text-align: left;
 }
 
 /*PARTIE CAROUSSEL*/
@@ -174,6 +192,7 @@ header {
   display: flex;
   margin-top: 20px;
   width: 1100px;
+  position: relative;
 }
 
 .div-texte {
@@ -181,6 +200,15 @@ header {
   flex-direction: column;
   gap: 20px;
   flex: 1;
+}
+
+.div-texte p {
+  font-size: 18px;
+  width: 75%;
+}
+
+.div-texte a {
+  font-size: 16px;
 }
 
 /*CONTIENT div-photo*/
@@ -210,9 +238,34 @@ header {
   color: green;
 }
 
+.circle span {
+  font-size: 12px;
+  color: #333333;
+  padding-left: 10px;
+}
+
 .heart {
   position: absolute;
   top: 5%;
   right: 5%;
   font-size: 30px;
+}
+
+.btn-hibou {
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  border-radius: 10px;
+  background-image: url("/assets/img/hibou.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.arrow {
+  position: absolute;
+  top: 30%;
+  right: 1%;
+  font-size: 40px;
 }
