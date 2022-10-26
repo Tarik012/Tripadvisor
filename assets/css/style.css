@@ -2,17 +2,42 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 54px;
   font-weight: bold;
+  margin-top: 25px;
 }
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1100px;
+}
+
+/*PARTIE HEADER*/
+header {
+  height: 80px;
   display: flex;
   justify-content: space-between;
+  position: fixed; /*pour fixer le header*/
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.main {
+  margin-top: 80px;
 }
 
 .div-logo-and-search {
   width: fit-content;
-
   display: flex;
   align-items: center;
 }
@@ -25,7 +50,7 @@ h1 {
 }
 
 .search {
-  width: 150px;
+  width: 200px;
   height: 30px;
   background: white;
   color: black;
@@ -34,11 +59,16 @@ h1 {
   border-radius: 10px;
 }
 
+/*PARTIE LIENS HEADER*/
 .links {
   width: 450px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.links span {
+  margin-left: 10px;
 }
 
 .img-menu-links {
@@ -51,29 +81,20 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   width: fit-content;
+  padding-top: 10px;
 }
 
 .btn-connect {
-  height: 35px;
-  width: 150px;
   border-radius: 20px;
   color: white;
   font-size: 15px;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
   background-color: black;
 }
 
-.main {
-  margin: 0 auto;
-  max-width: 1024px;
-  border: 3px solid black;
-}
-
-.main-center {
-  border: 5px solid red;
-  display: flex;
-  flex-direction: column;
-}
-
+/*PARTIE TITRE*/
 .explore {
   color: red;
   margin-bottom: 40px;
@@ -82,40 +103,116 @@ h1 {
 .revenus {
   font: 15px;
   color: #333333;
+  margin-top: 20px;
 }
 
-.liens {
+/*PARTIE LIENS*/
+.second-links {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.second-links p {
+  flex: 1;
+  height: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  cursor: pointer;
 }
 
-.liens-main {
-  border-radius: 10px;
-  height: 70px;
-  width: 200px;
-  color: black;
-  background-color: white;
-}
-
+/*PARTIE PHOTOS*/
 .images {
-  display: flex;
-}
-
-.quai {
+  /* background: salmon; */
+  margin-top: 50px;
   height: 400px;
-  width: 600px;
-  object-fit: cover;
+  display: flex;
+  gap: 2px;
 }
 
-.moto {
-  width: 500px;
-  height: 200px;
-  object-fit: cover;
+.left {
+  background-image: url("/assets/img/quai.jpeg");
+  flex: 4;
 }
 
-.toureiffel {
-  width: 500px;
-  height: 200px;
-  object-fit: cover;
+.right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.right-top {
+  background-image: url("/assets/img/moto.jpeg");
+  flex: 1;
+}
+
+.right-bottom {
+  background-image: url("/assets/img/toureiffel.jpeg");
+  flex: 1;
+}
+
+/*FACTORISE EN AJOUTANT UNE SECONDE CLASSE CAR ON L'APPLIQUE SUR LES IMAGES*/
+.images .center-background {
+  background-size: cover;
+  background-position: center;
+}
+
+/*PARTIE LUMIERE*/
+.lumiere {
+  font-size: 20px;
+  margin-top: 20px;
+  width: 45%;
+  text-align: justify;
+}
+
+/*PARTIE CAROUSSEL*/
+.immanquables {
+  display: flex;
+  margin-top: 20px;
+  width: 1100px;
+}
+
+.div-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+/*CONTIENT div-photo*/
+.container-carousel {
+  display: flex;
+  gap: 10px;
+  flex: 3;
+  overflow-x: scroll;
+}
+
+.div-photo {
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.div-photo img {
+  height: 250px;
+  width: 250px;
+}
+
+.div-photo h4 {
+  margin-top: 10px;
+}
+
+.circle {
+  color: green;
+}
+
+.heart {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
 }

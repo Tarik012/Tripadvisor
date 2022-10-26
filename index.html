@@ -20,10 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-
     <title>Tourisme à Paris 2022 : Visiter Paris - Tripadvisor</title>
   </head>
   <body>
+    <!--PARTIE HEADER AVEC LE LOGO, LE BOUTON RECHERCHE, LES LIENS ET LE BOUTON CONNECTEZ-VOUS-->
     <header class="container">
       <div class="div-logo-and-search">
         <img
@@ -34,38 +34,168 @@
         <input class="search" title="Rechercher" value="" />
       </div>
       <div class="links">
-        <p class="txt-menu"><i class="fa-solid fa-pencil"></i>Avis</p>
-        <p class="txt-menu"><i class="fa-solid fa-heart"></i>Voyages</p>
-        <p class="txt-menu"><i class="fa-regular fa-bell"></i>Alertes</p>
+        <p class="txt-menu">
+          <i class="fa-solid fa-pencil"></i><span>Avis</span>
+        </p>
+        <p class="txt-menu">
+          <i class="fa-regular fa-heart"></i><span>Voyages</span>
+        </p>
+        <p class="txt-menu">
+          <i class="fa-regular fa-bell"></i><span>Alertes</span>
+        </p>
         <button class="btn-connect">Connectez-vous</button>
       </div>
     </header>
-    <main class="container">
-      <div class="main-center">
-        <h1><span class="explore">Explorez</span> Paris</h1>
-        <p class="revenus">
-          Les revenus influencent le choix des expériences présentées sur cette
-          page :<a href="">en savoir plus.</a>
-        </p>
-        <div class="liens">
-          <button class="liens-main">
-            Hôtels<i class="fa-solid fa-bed"></i>
-          </button>
-          <button class="liens-main">Locations de vacances</button>
-          <button class="liens-main">Activités</button>
-          <button class="liens-main">Restaurants</button>
-          <button class="liens-main">Forums de voyage</button>
-          <button class="liens-main">Plus</button>
+
+    <!--PARTIE SOUS LE HEADER AVEC LE TITRE-->
+    <main class="container main">
+      <h1><span class="explore">Explorez</span> Paris</h1>
+      <p class="revenus">
+        Les revenus influencent le choix des expériences présentées sur cette
+        page :<a href=""> en savoir plus.</a>
+      </p>
+
+      <!--PARTIE LIENS SECONDAIRES-->
+      <div class="second-links">
+        <p>Hôtels <i class="fa-solid fa-bed"></i></p>
+        <p>Locations de vacances <i class="fa-solid fa-house-user"></i></p>
+        <p>Activités <i class="fa-solid fa-hourglass-start"></i></p>
+        <p>Restaurants <i class="fa-solid fa-utensils"></i></p>
+        <p>Forums de voyage <i class="fa-regular fa-message"></i></p>
+        <p>Plus <i class="fa-solid fa-ellipsis"></i></p>
+      </div>
+
+      <!--PARTIE IMAGES-->
+      <div class="images center-background">
+        <div class="left"></div>
+        <div class="right">
+          <div class="right-top"></div>
+          <div class="right-bottom"></div>
         </div>
-        <section class="images">
-          <div>
-            <img class="quai" src="./assets/img/quai.jpeg" />
+      </div>
+
+      <!--PARTIE LA VILLE LUMIERE-->
+      <h2>La Ville Lumière éblouit en tous points</h2>
+      <div class="lumiere">
+        Aucun autre endroit au monde ne fait autant rêver que Paris. La ville
+        séduit par son art, son architecture, sa culture et sa cuisine, mais il
+        y a aussi des merveilles plus discrètes qui n’attendent qu’à être
+        explorées : les ruelles pavées pittoresques, les pâtisseries au coin de
+        la rue et les petits bistrots douillets qui vous invitent à boire un
+        verre de beaujolais. Préparez-vous à vous approprier Paris.
+      </div>
+
+      <h2>Paris : les immanquables</h2>
+
+      <!--PARTIE CAROUSEL-->
+      <div class="immanquables">
+        <div class="div-texte">
+          <h3>Se divertir</h3>
+          <p>
+            Des lieux à voir, des rues à explorer et des expériences
+            emblématiques à Paris.
+          </p>
+          <a href="">Tout afficher</a>
+        </div>
+        <!--ELEMENT A DUPLIQUER-->
+        <div class="container-carousel">
+          <div class="div-photo">
+            <img src="./assets/img/toureiffel.jpeg" />
+            <h4>Eiffel Tower</h4>
+            <p class="circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </p>
+            <p>
+              Tours et plateformes d'observation,<br />Monuments & Points
+              d'intérêt
+            </p>
+            <p class="heart"><i class="fa-regular fa-heart"></i></p>
           </div>
-          <div>
-            <img class="moto" src="./assets/img/moto.jpeg" />
-            <img class="toureiffel" src="./assets/img/toureiffel.jpeg" />
+          <div class="div-photo">
+            <img src="./assets/img/toureiffel.jpeg" />
+            <h4>Eiffel Tower</h4>
+            <p class="circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </p>
+            <p>
+              Tours et plateformes d'observation,<br />Monuments & Points
+              d'intérêt
+            </p>
+            <p class="heart"><i class="fa-regular fa-heart"></i></p>
           </div>
-        </section>
+          <div class="div-photo">
+            <img src="./assets/img/toureiffel.jpeg" />
+            <h4>Eiffel Tower</h4>
+            <p class="circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </p>
+            <p>
+              Tours et plateformes d'observation,<br />Monuments & Points
+              d'intérêt
+            </p>
+            <p class="heart"><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <div class="div-photo">
+            <img src="./assets/img/toureiffel.jpeg" />
+            <h4>Eiffel Tower</h4>
+            <p class="circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </p>
+            <p>
+              Tours et plateformes d'observation,<br />Monuments & Points
+              d'intérêt
+            </p>
+            <p class="heart"><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <div class="div-photo">
+            <img src="./assets/img/toureiffel.jpeg" />
+            <h4>Eiffel Tower</h4>
+            <p class="circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </p>
+            <p>
+              Tours et plateformes d'observation,<br />Monuments & Points
+              d'intérêt
+            </p>
+            <p class="heart"><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <div class="div-photo">
+            <img src="./assets/img/toureiffel.jpeg" />
+            <h4>Eiffel Tower</h4>
+            <p class="circle">
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </p>
+            <p>
+              Tours et plateformes d'observation,<br />Monuments & Points
+              d'intérêt
+            </p>
+            <p class="heart"><i class="fa-regular fa-heart"></i></p>
+          </div>
+        </div>
       </div>
     </main>
   </body>
