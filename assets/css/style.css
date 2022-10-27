@@ -130,6 +130,12 @@ header {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 0.3s 0s ease-out;
+}
+
+.second-links p:hover {
+  background-color: black;
+  color: white;
 }
 
 /*PARTIE PHOTOS*/
@@ -139,6 +145,7 @@ header {
   height: 400px;
   display: flex;
   gap: 2px;
+  position: relative;
 }
 
 .left {
@@ -167,6 +174,23 @@ header {
 .images .center-background {
   background-size: cover;
   background-position: center;
+}
+
+.btn-photos {
+  height: 30px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 13px;
+  left: 13px;
+}
+
+.btn-photos span {
+  margin-left: 5px;
 }
 
 .legend {
@@ -216,18 +240,21 @@ header {
   display: flex;
   gap: 10px;
   flex: 3;
-  overflow-x: scroll;
+  /*overflow-x: scroll;*/
 }
 
 .div-photo {
   position: relative;
   flex-shrink: 0;
   box-sizing: border-box;
+  flex: calc(
+    (100% / 3) - 10px
+  ); /*on divise par 3 photos et on retranche le gap pour que les 3 images occupent toute la largeur*/
 }
 
 .div-photo img {
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 300px;
 }
 
 .div-photo h4 {
@@ -247,7 +274,7 @@ header {
 .heart {
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 10%;
   font-size: 30px;
 }
 
@@ -266,6 +293,6 @@ header {
 .arrow {
   position: absolute;
   top: 30%;
-  right: 1%;
+  left: 99%;
   font-size: 40px;
 }
