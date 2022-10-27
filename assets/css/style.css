@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: --font-family;
+  font-family: var(--font-family);
 }
 
 h1 {
@@ -546,15 +546,80 @@ footer a {
 
 *******************************************************************************************/
 @media (max-width: 1114px) {
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: auto;
-  }
-
   .container {
     max-width: auto;
+  }
+
+  .links {
+    width: auto;
+    flex: 1;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 30px;
+  }
+
+  .links span {
+    display: none;
+    margin-left: none;
+  }
+
+  .txt-menu {
+    width: min-content;
+    margin-left: 30px;
+  }
+
+  .second-links {
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid black;
+  }
+
+  .second-links p {
+    flex: none;
+    min-width: 300px;
+    flex-shrink: 0;
+  }
+
+  .footer-right {
+    flex-direction: column;
+  }
+}
+
+/******************************************************************************************
+
+              PARTIE MEDIA QUERY - max 1080px
+
+*******************************************************************************************/
+@media (max-width: 1080px) {
+  .immanquables {
+    width: 800px;
+  }
+
+  .arrow {
+    top: 30%;
+    left: 128%;
+  }
+}
+/******************************************************************************************
+
+              PARTIE MEDIA QUERY - max 1023px
+
+*******************************************************************************************/
+@media (max-width: 1023px) {
+  .div-photo {
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .arrow {
+    top: 30%;
+    left: 110%;
+  }
+
+  .escape {
+    width: 900px;
   }
 }
 /******************************************************************************************
@@ -580,15 +645,4 @@ footer a {
 
 *******************************************************************************************/
 @media (max-width: 861px) {
-  .second-links {
-    flex-wrap: wrap;
-    gap: 20px;
-    border: 1px solid black;
-  }
-
-  .second-links p {
-    flex: none;
-    min-width: 200px;
-    flex-shrink: 0;
-  }
 }
