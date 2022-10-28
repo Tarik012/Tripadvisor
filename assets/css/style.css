@@ -30,11 +30,12 @@ h3 {
 
 .container {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1140px;
 }
 
 /*PARTIE HEADER*/
 header {
+  background-color: salmon;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -523,12 +524,12 @@ footer a {
 
 /******************************************************************************************
 
-              PARTIE MEDIA QUERY - max 1184px
+              PARTIE MEDIA QUERY - max 1140px
 
 *******************************************************************************************/
-@media (max-width: 1184px) {
+@media (max-width: 1140px) {
   .container {
-    margin: auto;
+    margin: 0 20px;
   }
 
   header {
@@ -555,7 +556,6 @@ footer a {
     flex: 1;
     justify-content: flex-start;
     gap: 10px;
-    margin-left: 30px;
   }
 
   .links span {
@@ -572,12 +572,19 @@ footer a {
     flex-wrap: wrap;
     gap: 20px;
     border: 1px solid black;
+    box-sizing: border-box;
+    height: auto;
+    flex: calc(33% - 15px);
   }
 
   .second-links p {
     flex: none;
     min-width: 300px;
     flex-shrink: 0;
+  }
+
+  .lumiere {
+    width: 100%;
   }
 
   .footer-right {
@@ -645,4 +652,7 @@ footer a {
 
 *******************************************************************************************/
 @media (max-width: 861px) {
+  .links {
+    display: none;
+  }
 }
